@@ -1,18 +1,31 @@
-a.out: hello.o variable.o world.o
-	gcc hello.o variable.o world.o
+TARGETFILE=a.out
+FILE1=hello
+FILE2=variable
+FILE3=world
+
+$(TARGETFILE): $(FILE1).o $(FILE2).o $(FILE3).o
+	@echo "gccコマンドでa.outを生成"
+	gcc $(FILE1).o $(FILE2).o $(FILE3).o
+	@echo
 	@sleep 2
 
-hello.o: hello.c
-	gcc -c hello.c -o hello.o
+$(FILE1).o: $(FILE1).c
+	@echo "gccコマンドで$(FILE1).oを生成"
+	gcc -c $(FILE1).c -o $(FILE1).o
+	@echo
 	@sleep 2
 
-variable.o: variable.c
-	gcc -c variable.c -o variable.o
+$(FILE2).o: $(FILE2).c
+	@echo "gccコマンドで$(FILE2).oを生成"
+	gcc -c $(FILE2).c -o $(FILE2).o
+	@echo
 	@sleep 2
 
-world.o: world.c
-	gcc -c world.c -o world.o
+$(FILE3).o: $(FILE3).c
+	@echo "gccコマンドで$(FILE3).oを生成"
+	gcc -c $(FILE3).c -o $(FILE3).o
+	@echo
 	@sleep 2
 
 rm_object:
-	rm a.out variable.o hello.o world.o
+	rm $(TARGETFILE) $(FILE2).o $(FILE1).o $(FILE3).o
