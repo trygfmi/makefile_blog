@@ -1,20 +1,18 @@
-a.out: hello.o objectfile.o
-	echo "hello.o and objectfile.o";
-	sleep 1
-	gcc hello.o objectfile.o
-	echo
+a.out: hello.o objectfile.o world.o
+	gcc hello.o objectfile.o world.o
+	@sleep 2
 
 hello.o: hello.c
-	echo "hello.c";
-	sleep 1
 	gcc -c hello.c -o hello.o
-	echo
+	@sleep 2
 
 objectfile.o: objectfile.c
-	echo "objectfile.c";
-	sleep 1
 	gcc -c objectfile.c -o objectfile.o
-	echo
+	@sleep 2
+
+world.o: world.c
+	gcc -c world.c -o world.o
+	@sleep 2
 
 rm_object:
-	rm a.out objectfile.o hello.o
+	rm a.out objectfile.o hello.o world.o
