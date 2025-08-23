@@ -1,7 +1,7 @@
 a.out
 hello
 hello.o
-objectfile.o
+variable.o
 world
 world.o
 気付き箇条書き.txt
