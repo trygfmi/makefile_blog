@@ -31,4 +31,4 @@ $(FILE3).o: $(FILE3).c
 rm_object:
 	rm $(TARGETFILE) $(FILE2).o $(FILE1).o $(FILE3).o
 
-from_build_to_remove: 
+# git checkoutした後、コミットしてマージしたらgit log --oneline --graphがどうなるか検証
