@@ -31,4 +31,4 @@ $(FILE3).o: $(FILE3).c
 rm_object:
 	rm $(TARGETFILE) $(FILE2).o $(FILE1).o $(FILE3).o
 
-# 挙動を確認するために記述
+# git branch testをいつ実行するかでgit add git commitしてgit checkout testを選択した時に内容が反映されているか確認
