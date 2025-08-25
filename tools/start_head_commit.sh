@@ -1,7 +1,7 @@
 sleep_time=2
 
 
-git checkout head
+git checkout HEAD
 echo "カレントディレクトリの中身を表示します"
 ls
 echo
