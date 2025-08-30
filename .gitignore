@@ -4,5 +4,6 @@ hello.o
 variable.o
 world
 world.o
-気付き箇条書き.txt
-tools/start_head_commit.sh
+test
+
+work_directory
