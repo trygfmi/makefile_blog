@@ -3,10 +3,14 @@
 ## introduction
 このリポジトリはmakeコマンドを実行して、makeコマンドとmakefileの理解を深めようとする目的で作成しました
 
+<br />
+
 ## 使用するコマンド
    1. make
    2. gcc
    3. git
+
+<br />
 
 ## クイックスタート
 以下のコマンドを実行してリポジトリからダウンロード後、ディレクトリを移動しmakeで実行できます
@@ -16,12 +20,17 @@
    cd makefile_blog
    make
    ```
+
+<br />
+
 ### windows
    ```bash
    git clone https://github.com/trygfmi/makefile_blog.git
    cd makefile_blog
    make
    ```
+
+<br />
 
 ## 実行手順
 
@@ -158,6 +167,8 @@ command not foundが出たコマンドを以下のコマンドでインストー
    </details>
 </details>
 
+<br />
+
 ### macos
 <details>
 <summary>クリックして詳細を表示</summary>
@@ -292,6 +303,8 @@ command not foundが出たコマンドを以下のコマンドでインストー
    </details>
 </details>
 
+<br />
+
 ### windows
 <details>
 <summary>クリックして詳細を表示</summary>
@@ -302,6 +315,8 @@ command not foundが出たコマンドを以下のコマンドでインストー
 
 #### コマンド
 </details>
+
+<br />
 
 ## 補足要素
 git log --onelineで表示されるコミットに移動してmakeを実行することで、コミット文の内容を体験できる
