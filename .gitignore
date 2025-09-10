@@ -5,5 +5,8 @@ variable.o
 world
 world.o
 test
+readme_example.txt
+README_running-terminal-command.md
+template_README.md
 
 work_directory
