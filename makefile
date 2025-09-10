@@ -32,3 +32,42 @@ rm_object:
 	rm $(TARGETFILE) $(FILE2).o $(FILE1).o $(FILE3).o
 
 # git branch testをいつ実行するかでgit add git commitしてgit checkout testを選択した時に内容が反映されているか確認
+
+all:
+	git checkout HEAD
+	@echo "カレントディレクトリの中身を表示します"
+	@ls
+	@echo
+	@sleep $(SLEEP_TIME)
+
+	@echo "makeコマンドを実行します"
+	make
+	@sleep $(SLEEP_TIME)
+
+	@echo "カレントディレクトリの中身を表示します"
+	@ls
+	@echo
+	@sleep $(SLEEP_TIME)
+
+	@echo "ビルドしたファイルを実行します"
+	./a.out
+	@echo
+	@sleep $(SLEEP_TIME)
+
+	@echo "生成されたオブジェクトファイルをmakeコマンド経由で削除します"
+	make rm_object
+	@echo
+	@sleep $(SLEEP_TIME)
+
+	@echo "カレントディレクトリの中身を表示します"
+	@ls
+	@echo
+	@sleep $(SLEEP_TIME)
+
+	@echo "以上で終了です"
+
+linux:
+
+macos:
+
+windows:
