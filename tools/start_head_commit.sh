@@ -1,3 +1,6 @@
+# ./tools/start_head_commit.sh
+
+
 sleep_time=2
 
 
@@ -32,3 +35,5 @@ echo
 sleep $sleep_time
 
 echo "以上で終了です"
+
+
