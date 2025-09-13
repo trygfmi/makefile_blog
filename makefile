@@ -1,4 +1,5 @@
 TARGETFILE=a.out
+TARGETFILE2=a.exe
 FILE1=hello
 FILE2=variable
 FILE3=world
@@ -29,7 +30,14 @@ $(FILE3).o: $(FILE3).c
 	@sleep $(SLEEP_TIME)
 
 rm_object:
-	rm $(TARGETFILE) $(FILE2).o $(FILE1).o $(FILE3).o
+	if [ -f $(TARGETFILE) ]; then\
+		rm $(TARGETFILE);\
+		echo "$(TARGETFILE)を削除しました";\
+	else\
+		rm $(TARGETFILE2);\
+		echo "$(TARGETFILE2)を削除しました";\
+	fi
+	rm $(FILE2).o $(FILE1).o $(FILE3).o
 
 # git branch testをいつ実行するかでgit add git commitしてgit checkout testを選択した時に内容が反映されているか確認
 
