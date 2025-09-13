@@ -29,7 +29,7 @@ $(FILE3).o: $(FILE3).c
 	@echo
 	@sleep $(SLEEP_TIME)
 
-rm_object:
+rm_generated:
 	if [ -f $(TARGETFILE) ]; then\
 		rm $(TARGETFILE);\
 		echo "$(TARGETFILE)を削除しました";\

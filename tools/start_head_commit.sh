@@ -25,7 +25,7 @@ echo
 sleep $sleep_time
 
 echo "生成されたオブジェクトファイルをmakeコマンド経由で削除します"
-make rm_object
+make rm_generated
 echo
 sleep $sleep_time
 

@@ -5,4 +5,4 @@ sleep_time=1
 make
 ./a.exe
 sleep $sleep_time
-make rm_object
+make rm_generated
