@@ -2,7 +2,7 @@
 
 sleep_time=1
 
-make
+mingw32-make
 ./a.exe
 sleep $sleep_time
-make rm_generated
+mingw32-make rm_generated
