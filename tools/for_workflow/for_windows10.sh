@@ -37,4 +37,4 @@ sleep $sleep_time
 echo "以上で終了です"
 
 
-
+echo $MSYSTEM
