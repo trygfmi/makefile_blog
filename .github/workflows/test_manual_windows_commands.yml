@@ -13,7 +13,7 @@ jobs:
       - name: checkout all commits
         uses: actions/checkout@v4
         with:
-          fetch-deptch: 0
+          fetch-depth: 0
 
       - name: setup msys2 and install commands
         uses: msys2/setup-msys2@v2
