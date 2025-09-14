@@ -1,4 +1,4 @@
-name: MSYS2 Build
+name: test_windows_commands
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - 'tools/for_workflow/for_windows10.sh'  # 指定したファイル/ディレクトリが更新された場合のみ実行（例: src以下のファイル）
 
 jobs:
-  build:
+  windows-2022:
     runs-on: windows-2022
     defaults:
       run: 
