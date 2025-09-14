@@ -1,7 +1,5 @@
 name: test_ubuntu_commands
 
-on: workflow_dispatch
-
 on:
   push:
     paths:
