@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4  # リポジトリをチェックアウト
 
-      - name: Setup MSYS2
+      - name: Setup MSYS2 and install commands
         uses: msys2/setup-msys2@v2
         with:
           msystem: MINGW64  # MINGW64環境を選択
@@ -24,7 +24,7 @@ jobs:
             mingw-w64-x86_64-gcc
             git
 
-      - name: Build
+      - name: run windows commands
         run: |
           ./tools/for_workflow/for_windows10.sh # 例: makeコマンドを実行（Makefileがある前提）
           echo $MSYSTEM
