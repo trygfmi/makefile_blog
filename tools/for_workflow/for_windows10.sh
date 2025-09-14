@@ -20,7 +20,7 @@ echo
 sleep $sleep_time
 
 echo "ビルドしたファイルを実行します"
-./a.out
+./a.exe
 echo
 sleep $sleep_time
 
