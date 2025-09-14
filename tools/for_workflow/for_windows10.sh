@@ -108,7 +108,7 @@ ls
 ./a.exe
 mingw32-make rm_object
 ls
-./tools/from_build_to_remove.sh
+./tools/from_build_to_remove_windows.sh
 clear
 
 #git checkoutした後、コミットしてマージしたらgit log --oneline --graphがどうなるか検証
@@ -118,7 +118,7 @@ ls
 ./a.exe
 mingw32-make rm_object
 ls
-./tools/from_build_to_remove.sh
+./tools/from_build_to_remove_windows.sh
 clear
 
 #挙動を確認するために記述
@@ -128,7 +128,7 @@ ls
 ./a.exe
 mingw32-make rm_object
 ls
-./tools/from_build_to_remove.sh
+./tools/from_build_to_remove_windows.sh
 clear
 
 #git branch testをいつ実行するかでgit add git commitしてgit checkout testを選択した時に内容が反映されているか確認
@@ -138,7 +138,7 @@ ls
 ./a.exe
 mingw32-make rm_object
 ls
-./tools/from_build_to_remove.sh
+./tools/from_build_to_remove_windows.sh
 clear
 
-
+git log --oneline
