@@ -1,0 +1,23 @@
+name: test_ubuntu_commands
+
+on:
+  push:
+    paths:
+      - 'tools/for_workflow/for_ubuntu22.04.sh'  # 指定したファイル/ディレクトリが更新された場合のみ実行（例: src以下のファイル）
+
+jobs:
+  example:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout all commits
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 
+        run: ./tools/for_workflow/for_ubuntu22.04.sh
+        
