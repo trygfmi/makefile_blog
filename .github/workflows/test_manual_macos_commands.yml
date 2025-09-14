@@ -3,7 +3,7 @@ name: test_manual_macos_commands
 on: workflow_dispatch
   
 jobs:
-  macos13:
+  macos-13:
     runs-on: macos-13
     steps:
       - name: Checkout all commits
@@ -12,4 +12,4 @@ jobs:
           fetch-depth: 0
 
       - name: run macos commands
-        run: ./tools/work_flow/for_macos-13.sh
+        run: ./tools/for_workflow/for_macos-13.sh
