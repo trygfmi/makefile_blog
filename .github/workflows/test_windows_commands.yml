@@ -25,4 +25,7 @@ jobs:
             git
 
       - name: Build
-        run: ./tools/for_workflow/for_windows10.sh # 例: makeコマンドを実行（Makefileがある前提）
+        run: |
+          ./tools/for_workflow/for_windows10.sh # 例: makeコマンドを実行（Makefileがある前提）
+          echo $MSYSTEM
+
