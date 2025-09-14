@@ -1,4 +1,4 @@
-name: test_ubuntu_commands
+name: test_manual_ubuntu_commands
 
 on: workflow_dispatch
 
