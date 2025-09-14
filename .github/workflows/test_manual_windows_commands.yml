@@ -1,0 +1,33 @@
+name: test_manual_windows_commands
+
+on: workflow_diapatch
+
+jobs:
+  windows-2022:
+    runs-on: windows-2022
+    defaults:
+      run:
+        shell: msys2 {0}
+
+    steps:
+      - name: checkout all commits
+        uses: actions/checkout@v4
+        with:
+          fetch-deptch: 0
+
+      - name: setup msys2 and install commands
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64  # MINGW64環境を選択
+          update: true      # MSYS2を更新
+          install: >-       # インストールするパッケージ（make, gcc, git）
+            mingw-w64-x86_64-make
+            mingw-w64-x86_64-gcc
+            git
+
+      - name: run windows commands
+        run: |
+          ./tools/for_workflow/for_windows10.sh
+          echo $MSYSTEM
+
+
