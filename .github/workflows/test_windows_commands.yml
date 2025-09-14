@@ -13,6 +13,8 @@ jobs:
         shell: msys2 {0}
     steps:
       - uses: actions/checkout@v4  # リポジトリをチェックアウト
+        with:
+          fetch-depth: 0 # 全コミット履歴をフェッチ
 
       - name: Setup MSYS2 and install commands
         uses: msys2/setup-msys2@v2
