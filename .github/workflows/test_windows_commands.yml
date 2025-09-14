@@ -28,6 +28,6 @@ jobs:
 
       - name: run windows commands
         run: |
-          ./tools/for_workflow/for_windows10.sh # 例: makeコマンドを実行（Makefileがある前提）
+          ./tools/for_workflow/for_windows10.sh
           echo $MSYSTEM
 
