@@ -1,6 +1,6 @@
 name: test_manual_windows_commands
 
-on: workflow_diapatch
+on: workflow_dispatch
 
 jobs:
   windows-2022:
