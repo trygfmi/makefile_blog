@@ -1,0 +1,19 @@
+name: test_ubuntu_commands
+
+on: workflow_dispatch
+
+jobs:
+  ubuntu22.04:
+    runs-on: ubuntu-22.04
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout all commits
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: run ubuntu commands
+        run: ./tools/for_workflow/for_ubuntu22.04.sh
