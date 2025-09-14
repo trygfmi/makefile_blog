@@ -1,0 +1,21 @@
+name: test_macos_commands
+
+on:
+  push:
+    path:
+      - "tools/for_workflow/for_macos-13.sh"
+
+jobs:
+  macos-13:
+    runs-on: macos-13
+
+    steps:
+      - name: checkout all commits
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: run macos commands
+        run: ./tools/for_workflow/for_macos-13.sh
+
+
