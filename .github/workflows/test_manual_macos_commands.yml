@@ -11,5 +11,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: install commands
+        run: |
+          brew --version
+
       - name: run macos commands
         run: ./tools/for_workflow/for_macos-13.sh
