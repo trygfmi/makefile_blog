@@ -41,12 +41,42 @@ rm_generated:
 	rm $(FILE2).o $(FILE1).o $(FILE3).o
 
 
-ubuntu: $(TARGETFILE)
+ubuntu:
+	ls
+	@echo
+	make
+	@echo
+	ls
+	@echo
 	./a.out
+	@echo
+	make rm_generated
+	@echo
+	ls
 
-macos: $(TARGETFILE)
+macos:
+	ls
+	@echo
+	make
+	@echo
+	ls
+	@echo
 	./a.out
+	@echo
+	make rm_generated
+	@echo
+	ls
 
-windows: $(TARGETFILE)
+windows:
+	ls
+	@echo
+	make
+	@echo
+	ls
+	@echo
 	./a.exe
+	@echo
+	make rm_generated
+	@echo
+	ls
 
